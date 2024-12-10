@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".updatePage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+        <EditText
+            android:layout_marginTop="15dp"
+            android:id="@+id/updatenameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Name" />
+
+        <RadioGroup
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/updatemaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingEnd="30dp"
+                android:text="MALE"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/updatefemaleRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="FEMALE" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/updatebaseSalaryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Base Salary"
+            android:layout_marginTop="15dp"
+            />
+
+        <EditText
+            android:id="@+id/updatetotalSalesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:hint="Total Sales"
+            android:layout_marginTop="15dp"/>
+
+        <EditText
+            android:id="@+id/updatecommissionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="number"
+            android:hint="Commission Rate (Entered number %) "
+            android:digits="0123456789"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="update" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
